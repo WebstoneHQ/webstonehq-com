@@ -15,11 +15,11 @@
     <img src={logo} alt="Webstone Technologies logo" class="h-12 w-12 md:h-20 md:w-20" />
     <h1 class="mt-12 font-semibold text-white text-4xl tracking-wider md:text-8xl">Webstone<br />Technologies<Dot /></h1>
     <SectionParagraph class="mt-8">Education<Dot /> Documentation<Dot /> Onboarding<Dot /></SectionParagraph>
-    <DownArrow nextSectionAnchor="about-us" />
+    <DownArrow />
   </div>
 </div>
 
-<Section anchor="about-us">
+<Section>
   <div class="container mx-auto px-12 md:flex">
     <img src="/images/about-us.jpg" alt="Webstone Technologies logo" class="md:w-1/2" />
     <div class="md:w-1/2 md:ml-12">
@@ -32,11 +32,11 @@
     </div>
   </div>
   <svelte:fragment slot="downArrow">
-    <DownArrow nextSectionAnchor="our-services" />
+    <DownArrow />
   </svelte:fragment>
 </Section>
 
-<Section anchor="our-services">
+<Section>
   <div class="container mx-auto px-12 md:flex">
     <div class="md:w-1/2">
       <SectionTitle>Our<br />Services</SectionTitle>
@@ -55,11 +55,11 @@
     </div>
   </div>
   <svelte:fragment slot="downArrow">
-    <DownArrow nextSectionAnchor="contact" />
+    <DownArrow />
   </svelte:fragment>
 </Section>
 
-<Section anchor="contact" class="pb-16">
+<Section class="pb-16">
   <div class="container mx-auto px-12">
     <SectionTitle>Let's work together</SectionTitle>
     <div class="mt-8 md:flex md:items-center">
