@@ -1,9 +1,14 @@
 # To learn more about this file, please see the docs at https://www.gitpod.io/docs/references/gitpod-yml
 tasks:
   - init: npm i
-    command: npm run dev
+    command: |
+      export HMR_HOST=`gp url 24678`
+      npm run dev
 ports:
   - port: 3000
+    onOpen: ignore
+    visibility: public
+  - port: 24678
     onOpen: ignore
     visibility: public
 github:
