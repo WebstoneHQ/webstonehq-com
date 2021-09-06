@@ -1,0 +1,17 @@
+# To learn more about this file, please see the docs at https://www.gitpod.io/docs/references/gitpod-yml
+tasks:
+  - init: npm i
+    command: npm run dev
+ports:
+  - port: 3000
+    onOpen: ignore
+    visibility: public
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
+    pullRequestsFromForks: false
+    addCheck: true
+    addComment: false
+    addBadge: true
