@@ -7,6 +7,9 @@ const config = {
 		extend: {},
 	},
 	plugins: [],
+	variants: {
+		animation: ['motion-safe']
+	},
 };
 
 module.exports = config;
