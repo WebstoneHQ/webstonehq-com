@@ -66,11 +66,11 @@
       <img src="/images/contact-us.jpg" alt="Webstone Technologies logo" class="md:w-2/3" />
       <div class="mt-12 md:mt-0 md:ml-12">
         <h3 class="font-bold text-2xl text-white md:text-4xl">Twitter</h3>
-        <p class="text-pink-500 text-xl tracking-wider md:text-2xl">
+        <p class="mt-4 text-pink-500 text-xl tracking-wider md:text-2xl">
           <a href="https://twitter.com/webstonehq" target="_blank">@webstonehq</a>
         </p>
         <h3 class="mt-8 font-bold text-2xl text-white md:text-4xl">Email</h3>
-        <p class="text-pink-500 text-xl tracking-wider md:text-2xl">
+        <p class="mt-4 text-pink-500 text-xl tracking-wider md:text-2xl">
           <a href="mailto:hi@webstonehq.com" target="_blank">hi@webstonehq.com</a>
         </p>
       </div>
