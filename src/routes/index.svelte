@@ -59,7 +59,7 @@
   </svelte:fragment>
 </Section>
 
-<Section class="pb-16">
+<Section>
   <div class="container mx-auto px-12">
     <SectionTitle>Let's work together</SectionTitle>
     <div class="mt-8 md:flex md:items-center">
@@ -77,3 +77,7 @@
     </div>
   </div>
 </Section>
+
+<footer class="pt-16 pb-8 text-white">
+  <p class="text-sm text-center">Copyright &copy; 2021 Webstone Technologies Inc.</p>
+</footer>
