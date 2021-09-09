@@ -8,6 +8,7 @@
   import logo from "$lib/logo.svg";
 
   let ourServicesSectionIndex = 0;
+  // This function should probably be extracted to a util function
   const smoothScroll = (element: HTMLElement) => element.scrollIntoView({behavior: "smooth", block:"start", inline:"nearest"});
 </script>
 
