@@ -8,6 +8,7 @@
   import logo from "$lib/logo.svg";
 
   let ourServicesSectionIndex = 0;
+  const smoothScroll = (element: HTMLElement) => element.scrollIntoView({behavior: "smooth", block:"start", inline:"nearest"});
 </script>
 
 <div class="flex items-center h-screen w-screen bg-cover bg-no-repeat bg-center" style="background-image: url(/images/bg.jpg)">
@@ -15,11 +16,11 @@
     <img src={logo} alt="Webstone Technologies logo" class="h-12 w-12 md:h-20 md:w-20" />
     <h1 class="mt-12 font-semibold text-white text-4xl tracking-wider md:text-8xl">Webstone<br />Technologies<Dot /></h1>
     <SectionParagraph class="mt-8">Education<Dot /> Documentation<Dot /> Onboarding<Dot /></SectionParagraph>
-    <DownArrow />
+    <DownArrow onClickAction={()=>{ smoothScroll(document.getElementById("aboutSection")) }} />
   </div>
 </div>
 
-<Section>
+<Section id="aboutSection">
   <div class="container mx-auto px-12 md:flex">
     <img src="/images/about-us.jpg" alt="Webstone Technologies logo" class="md:w-1/2" />
     <div class="md:w-1/2 md:ml-12">
@@ -32,11 +33,11 @@
     </div>
   </div>
   <svelte:fragment slot="downArrow">
-    <DownArrow />
+    <DownArrow onClickAction={()=>{ smoothScroll(document.getElementById("serviceSection")) }} />
   </svelte:fragment>
 </Section>
 
-<Section>
+<Section id="serviceSection">
   <div class="container mx-auto px-12 md:flex">
     <div class="md:w-1/2">
       <SectionTitle>Our<br />Services</SectionTitle>
@@ -55,11 +56,11 @@
     </div>
   </div>
   <svelte:fragment slot="downArrow">
-    <DownArrow />
+    <DownArrow onClickAction={()=>{ smoothScroll(document.getElementById("contactSection")) }} />
   </svelte:fragment>
 </Section>
 
-<Section>
+<Section id="contactSection">
   <div class="container mx-auto px-12">
     <SectionTitle>Let's work together</SectionTitle>
     <div class="mt-8 md:flex md:items-center">
