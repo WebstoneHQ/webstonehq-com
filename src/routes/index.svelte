@@ -8,8 +8,6 @@
   import logo from "$lib/logo.svg";
 
   let ourServicesSectionIndex = 0;
-  // This function should probably be extracted to a util function
-  const smoothScroll = (element: HTMLElement) => element.scrollIntoView({behavior: "smooth", block:"start", inline:"nearest"});
 </script>
 
 <div class="flex items-center h-screen w-screen bg-cover bg-no-repeat bg-center" style="background-image: url(/images/bg.jpg)">
@@ -17,7 +15,7 @@
     <img src={logo} alt="Webstone Technologies logo" class="h-12 w-12 md:h-20 md:w-20" />
     <h1 class="mt-12 font-semibold text-white text-4xl tracking-wider md:text-8xl">Webstone<br />Technologies<Dot /></h1>
     <SectionParagraph class="mt-8">Education<Dot /> Documentation<Dot /> Onboarding<Dot /></SectionParagraph>
-    <DownArrow onClickAction={()=>{ smoothScroll(document.getElementById("aboutSection")) }} />
+    <DownArrow scrollToSection="about" />
   </div>
 </div>
 
@@ -34,7 +32,7 @@
     </div>
   </div>
   <svelte:fragment slot="downArrow">
-    <DownArrow onClickAction={()=>{ smoothScroll(document.getElementById("serviceSection")) }} />
+    <DownArrow scrollToSection="service" />
   </svelte:fragment>
 </Section>
 
@@ -57,7 +55,7 @@
     </div>
   </div>
   <svelte:fragment slot="downArrow">
-    <DownArrow onClickAction={()=>{ smoothScroll(document.getElementById("contactSection")) }} />
+    <DownArrow scrollToSection="contact" />
   </svelte:fragment>
 </Section>
 
